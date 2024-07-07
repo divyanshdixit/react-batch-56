@@ -1,0 +1,49 @@
+Q1: react => virtual dom => reconcilation + diffing algo
+
+div
+    h1 P
+        SPAN1
+
+version 1
+
+div
+    h1 P
+        SPAN
+
+version 2
+div
+    h1 P
+        SPAN1
+
+
+Q2:difference ?
+
+<div class="row">
+<> </>
+<div class="col">
+</div>
+
+<>
+
+</>
+
+// learn:
+
+function vs arrow function
+parameter vs argument
+callback function
+
+
+Redux:
+
+context api: 
+
+prop drilling / prop lifting:
+
+props => send data from parent to child .
+callback function + props => send data from child to parent
+
+                App (parent)
+        Home            About 
+Heading    Button   Input   Button
+                    Heading 
