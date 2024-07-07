@@ -29,9 +29,15 @@ Q2:difference ?
 
 // learn:
 
+const fn = () => {}
 function vs arrow function
+anonymous function
+synthetic events
+hook
+onclick
+
 parameter vs argument
-callback function
+callback function 
 
 
 Redux:

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Heading} from './components/Heading';
+import Parent from './components/Parent';
 
 function App() {
   const getDataFromChild = (data) => {
@@ -11,7 +12,7 @@ function App() {
       {/* props - immutable and state - mutable */}
       <Heading title="React batch 56" getDataFromChild={getDataFromChild}/> 
       <p id=""> Welcome </p>
-      {/* <Heading title="React batch 55"/> */}
+      <Parent/>
     </div>
   );
 }
