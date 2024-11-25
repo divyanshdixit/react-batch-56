@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import Child from './Child'
 
-const Parent = () => {
+const Parent = () => { // es6
     const [name, setName] = useState('divyansh');
     
     const getData = (d) => {
         console.log('first', d)
     }
 
+    React.createElement()
   return (
     <div>
         <h1> parent </h1>

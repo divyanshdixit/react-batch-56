@@ -1,0 +1,59 @@
+index.js => entry point 
+
+App.js => main component file => all component will include in this App component
+
+component =>
+
+jsx => js extension 
+
+props=> immutable => can not change, 
+
+state => mutable => can be changed, 
+
+import/export 
+
+Calculator application: 
+
+virtualDom => 
+
+                                App function 
+                            Calculator n1 = 10 , function as prop, call that function(10)
+                                Add n1
+                                Sum
+
+ sending a prop from parent to nested children component => prop drilling
+ send a prop from child to parent => prop lifting
+
+ context api  => solution for prop drilling 
+
+ from child to parent (value) => make function in parent , send it to prop to child, then call it in child component
+
+
+                                App 
+
+                            A (n1)      B      C 
+                        A1 b1 C1  A2 B2     A3 C3
+                        A2 B2
+                            B3 n1 = 10
+
+
+read about "key" prop used in loops.
+read about "state".
+
+
+Basic class component=> lifecycle phases
+
+Hooks => 16.8  
+
+hooks are the first thing that can ne written on the fisrt line of component
+
+1- useState Hook: const [state, setState] = useState(initialValue);
+
+class component / functional component => dumb component
+
+stateful component  / stateless component
+
+
+Index.js
+app.jsx
+basic.jsx
