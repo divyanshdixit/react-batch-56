@@ -53,3 +53,28 @@ callback function + props => send data from child to parent
         Home            About 
 Heading    Button   Input   Button
                     Heading 
+
+plain fetch + reducer function => use for small apps.
+
+// createAsyncThunk => (If you are doing async business logic)
+This automatically manages:
+
+1. loading state
+
+2. success state
+
+3. error state
+
+Ex:
+multi-step workflow (login → save token → redirect → show toast)
+not tied to a cached resource (upload image → track % progress)
+needs custom control flow (call 3 APIs in sequence)
+triggers multiple slice
+background job 
+payment flow & checkout process
+
+// Best option for API fetching: RTK Query (If you are fetching server data to display & CACHING)
+Auto refetch on focus or reconnects/ cache
+Offline handling
+track loading/error
+auto dedupe request
