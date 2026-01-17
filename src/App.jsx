@@ -10,6 +10,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleTheme } from './redux/Theme/themeSlice';
 import Users from './components/Users';
 import MemoWithRedux from './components/MemoWithRedux';
+import BasicHeader from './components/Header/BasicHeader';
+import TopBar from './components/TopBar';
+import Appbar from './components/Appbar';
+import Login from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import EffectUse from './components/EffectUse';
 
 export const ThemeContext = createContext("light");
 
@@ -30,19 +36,28 @@ function App() {
   return (
     
     <ThemeContext.Provider value={mode}>
-      <div style={{textAlign: 'center', marginTop: '16px', background: "var(--bg)", color: "var(--text)"}}>
+
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+      {/* <div style={{textAlign: 'center', marginTop: '16px', background: "var(--bg)", color: "var(--text)"}}>
       <Navbar />
       <Reducers />
       <Suspense fallback={'Loading..'}>
-        {/* <Dashboard /> */}
       </Suspense>
       <p> Current theme: {mode} </p>
       <button onClick={changeTheme}> Change theme to {`${mode === 'light' ? 'dark' : 'light' }`.toUpperCase()} </button>
       <Counter />
-      <Cart />
-      <Users />
-      <MemoWithRedux />
-      </div>
+      <Cart /> */}
+      {/* <Users /> */}
+      {/* <MemoWithRedux />
+      </div> */}
+      <BasicHeader />
+      <TopBar />
+      <Appbar />
+      <Login />
+      <EffectUse />
     </ThemeContext.Provider>
   );
 }

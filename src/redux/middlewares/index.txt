@@ -1,0 +1,11 @@
+// backend (server)
+
+req => middleware => server => response
+
+front(client)=> 
+
+dispatch(action) => middleware => reducer
+middleware(function) => logic
+
+reducer (sync logic, no side effect)
+

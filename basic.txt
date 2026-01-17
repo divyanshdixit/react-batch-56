@@ -78,3 +78,21 @@ Auto refetch on focus or reconnects/ cache
 Offline handling
 track loading/error
 auto dedupe request
+
+
+createAsyncThunk (generic async workflow) , rtk query (cache) (api call)  => async task 
+
+fetching data
+crud api
+caching => 4 fetchUsers() => 
+automatically refetch => on focus , on network re-connect, polling 
+want tags
+deduplication of requests
+
+
+multiple api calls in seq; 
+/login => token => dashbaord => user/profile => (business workflows)
+uploading files with custom progress 
+background job (localstorage + call api)
+slice => reducer(api) , slice 1=> reducer (api)
+abortController => api request cancel 
